@@ -1,4 +1,7 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import javax.management.remote.rmi._RMIConnection_Stub;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class repaso {
@@ -61,7 +64,7 @@ public class repaso {
                 int result = a * b;
                 System.out.println(a + "x" + b + "=" + result);
             }*/
-
+/*
         Scanner sc = new Scanner(System.in);
         int star = sc.nextInt();
 
@@ -71,7 +74,56 @@ public class repaso {
             }
             System.out.println();
         }
+*/
+/*
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int hap = 0;
+
+
+        for (int b = 1; b <= a; b++) {
+            if ( b % 2 == 0 || b % 4 == 0) {
+                hap += b;
+            }
+        }
+        System.out.println(hap);
+*/
+        /*int a = 200;
+        if ( a < 100) {
+            System.out.println("100보다 작군요..\n");
+            System.out.println(" 거짓이므로 이 문장은 안보이겠죠?\n");
+        }
+        System.out.println("프로그램 끝! \n");*/
+
+/*
+        int a = 200;
+        if ( a < 100) {
+            System.out.println("100보다 작군요..");
+            System.out.println("참이면 이 문장도 보이겟죠?");
+        }else {
+            System.out.println("100보다 크군요..");
+            System.out.println("거짓이면 이 문장도 보이겠죠?");
+        }
+        System.out.println("프로그램 끝!");
+*/
+/*        int a = 75;
+
+        if (a > 50) {
+            if (a < 100) {
+                System.out.printf("50보다 크고 100보다 작군요..\n");
+            } else {
+                System.out.printf("와 ~ 100보다 크군요..\n");
+            }
+        }else {
+            System.out.printf("애개 ~ 50보다 작군요.. \n");
+        }
+*/
+        Scanner sc = new Scanner(System.in);
+        int a ;
+
+        System.out.printf("점수를 입력하세요 : ");
+        a = sc.nextInt();
+
 
     }
 }
-
