@@ -118,12 +118,131 @@ public class repaso {
             System.out.printf("애개 ~ 50보다 작군요.. \n");
         }
 */
+/*
         Scanner sc = new Scanner(System.in);
         int a ;
 
         System.out.printf("점수를 입력하세요 : ");
         a = sc.nextInt();
 
+        if ( a >= 90) {
+            System.out.printf("A");
+        }else if ( a >= 80) {
+            System.out.printf("B");
+        }else if ( a >= 70) {
+            System.out.println("C");
+        }else if ( a >= 60) {
+            System.out.printf("D");
+        }else System.out.printf("F");
+        System.out.printf("학점입니다. \n");
+*/
+/*        Scanner sc = new Scanner(System.in);
+        int a;
+
+        System.out.printf("1~4중에 선택하세요 : ");
+        a = sc.nextInt();
+
+        if ( a == 1 ) {
+            System.out.printf("1을 선택했다");
+        } else if ( a == 2) {
+            System.out.printf("2를 선택했다");
+        } else if ( a == 3) {
+            System.out.printf("3을 선택했다.");
+        } else if ( a == 4) {
+            System.out.printf("4를 선택했다.");
+        } else System.out.printf("이상한걸 선택했다.");*/
+/*
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("첫번째 수를 입력하세요");
+        int a = sc.nextInt();
+        System.out.printf("계산할 연산자를 입력하세요");
+        int b = sc.nextInt();
+        System.out.printf("두번째 수를 입력하세요");
+        int c = sc.nextInt();
+
+        int result;
+        if ( b == '+') {
+            result = a + c;
+            System.out.println(result);
+        }else if ( b == '-') {
+            result = a - c;
+            System.out.println(result);
+        }else if ( b == '*') {
+            result = a * c;
+            System.out.println(result);
+        }else if ( b == '/') {
+            result = a / c;
+            System.out.println(result);
+        }else System.out.println(" 잘못 입력");
+*/
+        /*int i;
+        for ( i = 0; i < 5 ; i++) {
+            System.out.printf("안녕하세요? 빙글빙글 for 문을 공부중입니다. ^^\n");
+        }*/
+/*        int i;
+        for ( i = 0; i < 3; i++) {
+            System.out.printf("안녕하세요 ? \n");
+            System.out.printf("##또 안녕하세요?## \n");
+        }
+        System.out.printf("\n\n");
+        for (i = 0; i < 3; i++)
+            System.out.printf("안녕하세요 \n");
+            System.out.printf("##또 안녕하세요?##\n");
+*/
+/*        int hap;
+
+        hap = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10;
+        System.out.printf("1에서 10 까지의 합 : %d \n", hap);*/
+        /*int hap = 0;
+        int i;
+
+        for ( i = 1; i <= 10; i++) {
+            hap += i;
+        }
+        System.out.printf("1에서 10까지의 합은 : %d \n", hap);*/
+
+        /*for ( int i = 2; i < 10; i++) {
+            for ( int b = 1; b < 10; b++) {
+                System.out.printf("%d x %d = %d \n",i,b, i*b);
+            }
+            System.out.println();
+        }*/
+
+       /* Scanner s = new Scanner(System.in);
+        System.out.printf("출력할 구구단 입력하시오 ==>");
+        int dan = s.nextInt();
+
+        for( int i = 1; i <= 10; i++) {
+            System.out.printf("%d x %d = %d \n", dan, i, dan*i);
+        }*/
+        /*int i,k;
+
+        for(i = 0; i < 3; i++) {
+            for (k = 0; k < 2; k++){
+                System.out.printf("중첩for문입니다.(i값:%d, k값:%d)\n",i,k);
+            }
+        }*/
+        /*int i,dan;
+        for( dan = 2; dan <= 9; dan++){
+            System.out.printf("## %d단 ##\n",dan);
+            for (i = 2; i <= 9; i++){
+                System.out.printf("%d x %d = %d\n", dan, i, dan*i);
+            }
+        }*/
+       /* int i,k;
+        for ( i = 1; i <= 9; i++) {
+            for (k = 2; k <= 9; k++) {
+                System.out.printf("%3dx%d = %2d", i, k, i*k);
+            }
+            System.out.printf("\n");
+        }*/
+        for(int line = 1; line <= 5; line++) {
+            for ( int s = 1; s <= line; s++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
 
     }
 }
