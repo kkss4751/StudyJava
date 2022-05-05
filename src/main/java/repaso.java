@@ -2,10 +2,29 @@ import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import javax.management.remote.rmi._RMIConnection_Stub;
 import java.sql.SQLOutput;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class repaso {
     public static void main(String[] args) {
+
+        Map<String, String> pmap = new HashMap<>();
+
+        pmap.put("name", "이정훈");
+        pmap.put("nikname", "이정훈");
+        pmap.put("email", "ddd@nav");
+        pmap.put("dept", "디콘");
+        pmap.put("dept", "데분");
+
+        System.out.println("이름 :" + pmap.get("name"));
+        System.out.println("닉네임 :" + pmap.get("nickname"));
+        System.out.println("이메일 :" + pmap.get("email"));
+        System.out.println("학과 :" + pmap.get("dept"));
+        System.out.println("텍스트출력 :" + pmap.get("오타"));
+
+
+
 
         /*Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();*/
@@ -237,12 +256,16 @@ public class repaso {
             }
             System.out.printf("\n");
         }*/
-        for(int line = 1; line <= 5; line++) {
+        /*Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        for(int line = 1; line <= a; line++) {
             for ( int s = 1; s <= line; s++) {
                 System.out.print("*");
             }
             System.out.println("");
-        }
+        }*/
+       /* int[] age = new int[4];
+        age[0] = new Int*/
 
     }
 }
