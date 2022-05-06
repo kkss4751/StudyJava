@@ -9,7 +9,32 @@ import java.util.Scanner;
 public class repaso {
     public static void main(String[] args) {
 
-        Map<String, String> pmap = new HashMap<>();
+        int i,k;
+
+        for (i = 2; i <= 9; i++){
+            System.out.printf( " #제 %d 단 #" ,i );
+        }
+        System.out.printf("\n\n");
+
+        for (i = 1; i <= 9; i++){
+            for (k = 2; k <= 9; k++){
+                System.out.printf("%2d x %2d = %2d", k, i, k*i);
+            }
+            System.out.printf("\n");
+        }
+
+       /* for(int i = 1; i < 5; i++){
+            for(int j = 4; j>0; j--){
+                if (i<j){
+                    System.out.print(" ");
+                }else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println("");
+        }*/
+
+       /* Map<String, String> pmap = new HashMap<>();
 
         pmap.put("name", "이정훈");
         pmap.put("nikname", "이정훈");
@@ -22,9 +47,7 @@ public class repaso {
         System.out.println("이메일 :" + pmap.get("email"));
         System.out.println("학과 :" + pmap.get("dept"));
         System.out.println("텍스트출력 :" + pmap.get("오타"));
-
-
-
+*/
 
         /*Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();*/
