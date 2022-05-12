@@ -2,14 +2,60 @@ import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import javax.management.remote.rmi._RMIConnection_Stub;
 import java.sql.SQLOutput;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class repaso {
     public static void main(String[] args) {
 
-        int i,k;
+        List<String> list = new ArrayList<>();
+
+        list.add("이협건");
+        list.add("홍길동");
+        list.add("고길동");
+        list.add("임꺽정");
+
+        int listsize = list.size();
+
+        for ( int i = 0; i < listsize; i++){
+            System.out.println("이름 : " + list.get(i));
+        }
+        //foreach문으로 조회/
+        for ( String name : list) {
+            System.out.println("이름 : " + name);
+        }
+
+        //람다식
+        list.forEach(name -> System.out.println("name : "+ name));
+
+        //Iterator
+        Iterator<String> it = list.iterator();
+
+        while(it.hasNext()){
+            String name = it.next();
+            System.out.println("이름 : "+ name);
+        }
+
+        /*int aa[] = {10,20,30,40,50};
+        int count,size;
+
+        count = aa.length;
+        size = count*Integer.BYTES;
+
+        System.out.printf("배열 aa[]요소의 개수는 %d개이고 \n", count);
+        System.out.printf("배열 aa[]요소의 크기는 %d 바이트 입니다\n", size);*/
+
+        /*Scanner s = new Scanner(System.in);
+        int [] aa = new int[4];
+        int hap = 0, i;
+
+        for (i=0;i<=3;i++){
+            System.out.printf("%d번째 숫자를 입력하세요\n", i+1);
+            aa[i] = s.nextInt();
+        }
+        hap= aa[0] + aa[1] + aa[2] + aa[3];
+        System.out.printf("합계 ==> %d \n",hap);*/
+
+        /*int i,k;
 
         for (i = 2; i <= 9; i++){
             System.out.printf( " #제 %d 단 #" ,i );
@@ -21,7 +67,7 @@ public class repaso {
                 System.out.printf("%2d x %2d = %2d", k, i, k*i);
             }
             System.out.printf("\n");
-        }
+        }*/
 
        /* for(int i = 1; i < 5; i++){
             for(int j = 4; j>0; j--){
