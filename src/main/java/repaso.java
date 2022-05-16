@@ -7,7 +7,18 @@ import java.util.*;
 public class repaso {
     public static void main(String[] args) {
 
-        for(int i=1; i<=5; i++) {
+        List<String> list = new ArrayList<>();
+        list.add("이정훈");
+        list.add("이정");
+        list.add("이훈");
+        list.add("정훈");
+
+        int ListSize = list.size();
+        for (String name : list) {
+            System.out.println("이름 : " + name);
+        }
+
+       /* for(int i=1; i<=5; i++) {
             for (int j = 1; j <= 5 - i; j++) {
                 System.out.print(" "); //공백
             }
@@ -18,7 +29,7 @@ public class repaso {
                 System.out.print("* "); //나머지 별반틈.
             }
             System.out.println();
-        }
+        }*/
         /*List<String> list = new ArrayList<>();
 
         list.add("이협건");
