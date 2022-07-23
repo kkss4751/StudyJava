@@ -9,7 +9,7 @@ public class p0629 {
         Scanner sc = new Scanner(System.in);
         int month = sc.nextInt();
 
-        switch(month){
+       /* switch(month){
             case 3:
             case 4:
             case 5:
@@ -24,7 +24,16 @@ public class p0629 {
             case 12: case 1: case 2:
                 System.out.println("현재의 계절은 겨울입니다.");
                 break;
-            default:
-        }
+            default:*/
+
+        //switch 문 if 문으로 바꿔보기
+
+        if(month == 3 || month == 4 || month == 5){
+            System.out.println("현재의 계절은 봄 입니다");
+        }else if (month == 6 || month == 7 || month ==8) {
+            System.out.println("현재의 계절은 여름 입니다");
+        }else if(month == 9 || month == 10 || month == 11){
+            System.out.println("현재의 계절은 가을 입니다.");
+        }else System.out.println("현재의 계절은 겨울입니다.");
     }
 }
